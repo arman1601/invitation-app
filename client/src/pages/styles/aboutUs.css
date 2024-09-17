@@ -1,0 +1,109 @@
+/* styles/aboutUs.css */
+.aboutUs-cont {
+    width: 100%;
+    background-color: #D8D8D8;
+    display: flex;
+    flex-direction: column; /* Для мобильных устройств */
+    justify-content: center;
+    align-items: center;
+    padding: 2rem; /* Уменьшенные отступы для мобильных устройств */
+    gap: 10%; /* Зазор между элементами для мобильных устройств */
+}
+
+.aboutUs-desc {
+    margin-bottom: 2rem; /* Отступ снизу для мобильных устройств */
+    text-align: center; /* Центрируем текст */
+}
+
+.aboutUs-cont h1 {
+    font-size: 2rem; /* Размер шрифта заголовка для мобильных устройств */
+    line-height: 1.2; /* Высота строки для лучшего отображения текста */
+}
+
+.aboutUs-cont ul {
+    list-style: none; /* Убираем стандартные маркеры списка */
+    padding: 0;
+    margin: 1rem 0;
+    font-size: 1.1rem; /* Увеличиваем размер шрифта для мобильных устройств */
+    text-align: left; /* Выравниваем текст по левому краю */
+}
+
+.aboutUs-cont ul li {
+    position: relative; /* Для абсолютного позиционирования маркера */
+    padding-left: 2.5rem; /* Отступ для текста, чтобы не перекрывал маркер */
+    margin-bottom: 1rem; /* Отступ между элементами списка */
+}
+
+.aboutUs-cont ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: black; /* Цвет маркера */
+}
+
+.aboutUs-cont img {
+    width: 12rem; /* Размер изображения для мобильных устройств */
+    height: auto; /* Сохраняем пропорции изображения */
+}
+
+@media (min-width: 768px) {
+    .aboutUs-cont {
+        flex-direction: row; /* Изменяем направление на строку для планшетов и больших экранов */
+        justify-content: space-between; /* Распределяем элементы с равными промежутками */
+        align-items: center; /* Центрируем элементы по вертикали */
+        padding: 3rem; /* Увеличиваем внутренние отступы */
+        gap: 5%; /* Уменьшаем зазор между элементами */
+    }
+
+    .aboutUs-desc {
+        margin-bottom: 0; /* Убираем отступ снизу на больших экранах */
+        text-align: left; /* Выравниваем текст по левому краю */
+    }
+
+    .aboutUs-cont h1 {
+        font-size: 3rem; /* Увеличиваем размер шрифта заголовка для планшетов и десктопов */
+    }
+
+    .aboutUs-cont ul {
+        font-size: 1.3rem; /* Увеличиваем размер шрифта для списка */
+    }
+
+    .aboutUs-cont ul li::before {
+        width: 1rem; /* Увеличиваем размер маркера */
+        height: 1rem; /* Увеличиваем размер маркера */
+    }
+
+    .aboutUs-cont img {
+        width: 20rem; /* Увеличиваем ширину изображения для больших экранов */
+    }
+}
+
+@media (min-width: 1024px) {
+    .aboutUs-cont {
+        justify-content: center; /* Распределяем элементы с равными промежутками */
+        align-items: center; /* Центрируем элементы по вертикали */
+        padding: 2rem; /* Уменьшенные отступы для мобильных устройств */
+        gap: 10%; /* Зазор между элементами для мобильных устройств */    }
+
+    .aboutUs-cont h1 {
+        font-size: 4rem; /* Увеличиваем размер шрифта заголовка для десктопов */
+    }
+
+    .aboutUs-cont ul {
+        font-size: 1.4rem; /* Размер шрифта для списка */
+    }
+
+    .aboutUs-cont ul li::before {
+        width: 1.2rem; /* Еще больше увеличиваем размер маркера */
+        height: 1.2rem; /* Еще больше увеличиваем размер маркера */
+    }
+
+    .aboutUs-cont img {
+        width: 16rem; /* Еще больше увеличиваем ширину изображения */
+    }
+}

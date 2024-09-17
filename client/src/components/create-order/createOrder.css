@@ -1,0 +1,70 @@
+/* styles/createOrder.css */
+.createOrder-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    gap: 3rem;
+    padding-bottom: 3rem;
+    margin: 0 auto; /* Центрирование контейнера */
+}
+
+.createOrder-cont h2 {
+    font-size: 3rem;
+    text-align: center; /* Центрирование заголовка */
+}
+
+.createOrder-cont span {
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: black;
+    color: #D8D8D8;
+    padding: 0.5rem 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.createOrder-cont-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center; /* Центрирование текста описания */
+}
+
+.submitOrder-cont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; /* Уменьшение промежутков между кнопками на мобильных */
+    margin: 0 auto;
+}
+
+.submitOrder-cont button {
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .createOrder-cont {
+        width: 90%; /* Увеличение ширины контейнера для мобильных устройств */
+    }
+
+    .createOrder-cont h2 {
+        font-size: 2rem; /* Уменьшение размера шрифта заголовка */
+    }
+
+    .createOrder-cont span {
+        font-size: 1.2rem; /* Уменьшение размера шрифта в span */
+        padding: 0.5rem 2rem; /* Уменьшение отступов */
+    }
+
+    .createOrder-cont-desc p {
+        font-size: 1rem; /* Уменьшение размера шрифта параграфа */
+        padding: 0 1rem; /* Добавление боковых отступов */
+    }
+
+    .submitOrder-cont {
+        grid-template-columns: 1fr; /* Одна кнопка на строке для мобильных устройств */
+    }
+}

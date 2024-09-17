@@ -1,0 +1,31 @@
+/* styles/customOffer.css */
+.customOffer-cont {
+    height: auto;
+    width: 100%;
+    max-width: 1200px;
+    gap:2rem;
+    padding: 3rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+
+    .customOffer-cont > * {
+        min-width: 300px; 
+    }
+    .customOffer-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .customOffer-cont {
+        padding: 2rem;
+        padding: 0;
+        gap: 0;
+    }
+}

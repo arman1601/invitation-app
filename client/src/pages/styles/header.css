@@ -1,0 +1,46 @@
+/* styles/header.css */
+.header-cont {
+    height: 20vh; /* Уменьшение высоты на мобильных устройствах */
+    width: 100%;
+    background-color: #D8D8D8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: montserratarm-regular;
+    padding: 1rem; /* Добавляем внутренний отступ для лучшей читаемости */
+}
+
+.header-cont h1 {
+    display: inline;
+    background-color: aliceblue;
+    color: black;
+    font-size: 1.5rem; /* Уменьшаем размер шрифта для мобильных устройств */
+    border: 1px solid transparent;
+    border-radius: 15px; /* Уменьшаем радиус скругления */
+    padding: 0.5rem 1rem; /* Уменьшаем отступы */
+    text-align: center; /* Центрируем текст */
+}
+
+/* styles/header.css */
+
+/* Базовые стили (для мобильных устройств) остаются без изменений */
+
+@media (min-width: 768px) {
+    .header-cont {
+        height: 30vh; /* Возвращаем высоту для планшетов и более крупных экранов */
+    }
+
+    .header-cont h1 {
+        font-size: 2rem; /* Увеличиваем размер шрифта */
+        border-radius: 25px; /* Увеличиваем радиус скругления */
+        padding: 1rem; /* Увеличиваем отступы */
+    }
+}
+
+@media (min-width: 1024px) {
+    .header-cont h1 {
+        font-size: 3rem; /* Ещё больше увеличиваем размер шрифта для десктопов */
+        padding: 2rem;
+        border-radius: 100px;
+    }
+}

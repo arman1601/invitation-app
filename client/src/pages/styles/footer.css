@@ -1,0 +1,81 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+    margin: 0 auto;
+    background-color: black;
+    padding: 2rem 0;
+}
+
+.footer-container h1 {
+    font-size: 2rem;
+    text-align: left;
+}
+
+.footer-container-info {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    justify-content: space-between;
+    padding: 5% 0;
+    border-bottom: 1px solid #fff;
+    line-height: 2rem;
+    gap: 2rem;
+}
+
+.footer-container-info ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 0;
+    list-style: none; /* Удаляем стандартные маркеры списка */
+}
+
+.footer-container-info ul img {
+    width: 30px;
+}
+
+.footer-container-info ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-container-rules {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
+    .footer-container-info {
+        grid-template-columns: 1fr; /* Меняем сетку на одну колонку */
+        text-align: center; /* Выравнивание по центру */
+    }
+
+    .footer-container-info ul {
+        justify-content: center; /* Центрируем элементы списка */
+    }
+    
+    .footer-container h1,
+    .footer-container h2,
+    .footer-container p,
+    .footer-container span {
+        text-align: center; /* Центрируем текст */
+    }
+}

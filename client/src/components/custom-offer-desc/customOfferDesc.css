@@ -1,0 +1,131 @@
+/* styles/customOfferDesc.css */
+.personalMaket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 100;
+    box-sizing: border-box;
+}
+
+.personalMaket h1 {
+    font-size: 4rem; /* Меньше для мобильных */
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.personalMaket h2 {
+    font-size: 2rem; /* Меньше для мобильных */
+}
+
+.personalMaket h3 {
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: black;
+    color: #D8D8D8;
+    padding: 0.5rem 1.5rem; 
+    text-align: center;
+    font-size: 1.2rem; /* Меньше для мобильных */
+}
+
+.personalMaket span {
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: black;
+    color: #D8D8D8;
+    text-align: center;
+    font-size: 2rem; /* Меньше для мобильных */
+    padding: 0.3rem 3rem 0.3rem 3rem;
+}
+
+.personalMaket_desc {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 2rem; 
+    box-sizing: border-box;
+    gap: 0.3rem;
+}
+
+.personalMaket_desc > div {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.personalMaket_desc ul {
+    list-style-type: circle;
+    /* padding-left: 1.5rem; */
+    font-size: 1.5rem; /* Меньше для мобильных */
+    text-align: left;
+}
+
+.personalMaket_desc ul li {
+    padding: 0.1rem;
+}
+
+.personalMaket_desc_price h2,h3 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.personalMaket_desc_price h3 {
+    padding: 1rem 3rem 1rem 3rem;
+    text-align: center;
+}
+
+
+@media (min-width: 768px) {
+    .personalMaket {
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .personalMaket h1 {
+        font-size: 3rem;
+    }
+
+    .personalMaket h2 {
+        font-size: 2.5rem;
+    }
+
+    .personalMaket h3 {
+        padding: 0.5rem 3rem;
+        font-size: 1.5rem;
+    }
+
+    .personalMaket_desc {
+        display: flex;  /* Используем Flexbox */
+        align-items: center;  /* Центрируем по вертикали */
+        justify-content: space-between;  /* Равномерное распределение по горизонтали */
+        width: 80%;  /* Делаем блок меньше, чтобы элементы выглядели более компактно */
+        padding: 2rem;
+        gap: 2rem;
+        box-sizing: border-box;
+    }
+    
+    .personalMaket_desc > div {
+        flex: 1;  /* Позволяем блокам расти равномерно */
+        text-align: center;
+    }
+    
+    .personalMaket_desc_price {
+        border-left: 1px solid black;
+    }
+
+    .personalMaket_desc hr {
+        height: 4rem; /* Меньше для мобильных */
+        width: 1px;
+        background-color: black;
+    }
+
+    .personalMaket_desc ul {
+        font-size: 2rem;
+    }
+}
+

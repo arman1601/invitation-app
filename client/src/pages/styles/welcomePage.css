@@ -1,0 +1,78 @@
+/* styles/welcomePage.css */
+.welcomePage-cont {
+    width: 100%;
+    background-color: black;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem; /* Уменьшаем отступы для мобильных устройств */
+    text-align: center; /* Центрируем текст */
+}
+
+.welcomePage-cont h1  {
+    font-size: 2.5rem; /* Уменьшаем размер шрифта для заголовка */
+    text-align: center; /* Центрируем заголовок */
+    font-weight: 800;
+    letter-spacing: 0.1rem; /* Уменьшаем межбуквенное расстояние */
+    margin-bottom: 1rem; /* Добавляем отступ снизу */
+}
+
+.welcomePage-desc {
+    display: flex;
+    flex-direction: column; /* Выставляем элементы в колонку на мобильных устройствах */
+    gap: 1rem; /* Уменьшаем расстояние между элементами */
+}
+
+.welcomePage-desc p {
+    font-size: 1rem; /* Уменьшаем размер шрифта для текста */
+}
+
+.welcomePage-desc button {
+    font-size: 1.2rem; /* Уменьшаем размер шрифта для кнопки */
+    padding: 0.75rem; /* Уменьшаем внутренние отступы кнопки */
+    width: 10rem;
+    background-color: #D8D8D8;
+}
+
+.welcomePage-desc button:hover {
+    background-color: #fff;
+    color: black;
+}
+
+
+/* styles/welcomePage.css */
+
+/* Базовые стили (для мобильных устройств) остаются без изменений */
+
+@media (min-width: 768px) {
+    .welcomePage-cont {
+        padding: 3rem; /* Возвращаем больше отступов для планшетов и более крупных экранов */
+    }
+
+    .welcomePage-cont h1 {
+        font-size: 4rem; /* Увеличиваем размер шрифта для заголовка */
+        letter-spacing: 0.2rem; /* Увеличиваем межбуквенное расстояние */
+    }
+
+    .welcomePage-desc {
+        flex-direction: row; /* Выставляем элементы в строку на планшетах и десктопах */
+        gap: 2rem; /* Увеличиваем расстояние между элементами */
+    }
+
+    .welcomePage-desc p {
+        font-size: 1.2rem; /* Увеличиваем размер шрифта для текста */
+    }
+
+    .welcomePage-desc button {
+        font-size: 1.5rem; /* Увеличиваем размер шрифта для кнопки */
+        padding: 1rem 1.5rem; /* Увеличиваем внутренние отступы кнопки */
+    }
+}
+
+@media (min-width: 1024px) {
+    .welcomePage-cont h1 {
+        font-size: 5rem; /* Увеличиваем размер шрифта для заголовка на десктопах */
+    }
+}

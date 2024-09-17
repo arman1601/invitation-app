@@ -1,0 +1,13 @@
+.item-button {
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 0.7rem;
+    width: 7rem;
+    background-color: transparent;
+    color: black;
+}
+
+.item-button:hover {
+    background-color: black;
+    color: #fff;
+}

@@ -1,0 +1,78 @@
+/* styles/catalog.css */
+.productList-cont {
+    width: 100%;
+    background-color: #a3bbc2;
+    padding: 2rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productList-cont h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.productList-cont ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+.productList-cont ul li {
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+    transition: color 0.3s, border-bottom-color 0.3s;
+}
+
+.productList-cont ul li:hover {
+    color: #333;
+    border-bottom-color: #333;
+}
+
+.itemCard {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .productList-cont {
+        padding: 3rem 2rem;
+    }
+
+    .productList-cont h1 {
+        font-size: 3rem;
+    }
+
+    .productList-cont ul li {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .productList-cont {
+        padding: 4rem 3rem;
+    }
+
+    .productList-cont h1 {
+        font-size: 4rem;
+    }
+
+    .productList-cont ul li {
+        font-size: 1.6rem;
+    }
+
+    .itemCard {
+        grid-template-columns: repeat(3, 1fr); /* 3 карточки в строке на больших экранах */
+    }
+}
