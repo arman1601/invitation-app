@@ -1,0 +1,14 @@
+/* managePanel.css */
+.content {
+    margin-left: 200px; /* Оставляем место для фиксированного навбара на десктопах */
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+/* Адаптивный контент для мобильных устройств */
+@media (max-width: 768px) {
+    .content {
+        margin-left: 0; /* Убираем отступ для мобильных устройств */
+        padding: 10px; /* Уменьшаем отступы для мобильных устройств */
+    }
+}

@@ -1,0 +1,30 @@
+.template1-header {
+    background-image: url('../../img/hero.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.template1-heading {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    font-family: 'Caveat', cursive;
+    font-size: 3em;
+    font-weight: normal;
+    text-shadow: 0 0 10px #000;
+}
+
+.template1-heading-subtext {
+    color: #fff;
+    font-family: 'Caveat', cursive;
+    font-size: 1.2em;
+}
+  
+
+  

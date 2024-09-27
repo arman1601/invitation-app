@@ -1,0 +1,94 @@
+/* navbar.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px; /* Ширина для десктопов */
+    height: 100vh; /* Растягиваем навбар на всю высоту экрана */
+    background-color: #1e1e1e; /* Темный фон для навбара */
+    color: #ffffff; /* Светлый цвет текста внутри */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.navbar h1 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Занимаем всю ширину контейнера */
+}
+
+.navbar ul li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    background-color: #2e2e2e; /* Темный фон для каждого элемента */
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Плавный переход для hover */
+}
+
+.navbar ul li:hover {
+    background-color: #444444; /* Изменение фона при наведении */
+}
+
+.navbar h1:last-child {
+    margin-top: auto; /* Размещаем этот заголовок внизу навбара */
+    font-size: 1rem;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%; /* Навбар занимает всю ширину экрана на мобильных устройствах */
+        height: auto; /* Высота автоматическая */
+        flex-direction: row; /* Элементы выстраиваются в строку */
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; /* Элементы меню равномерно распределяются */
+        width: auto;
+    }
+
+    .navbar ul li {
+        font-size: 1rem;
+        margin-bottom: 0; /* Убираем отступы снизу */
+        padding: 10px; /* Уменьшаем внутренние отступы */
+    }
+
+    .navbar h1 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Адаптация для очень маленьких экранов (мобильные устройства до 480px) */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column; /* Снова выстраиваем элементы в колонку */
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Элементы списка в колонку */
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        font-size: 0.9rem; /* Уменьшаем размер шрифта для маленьких экранов */
+    }
+}

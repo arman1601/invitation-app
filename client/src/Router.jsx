@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 // Используем lazy для ленивой загрузки компонентов страниц
 const MainSite = React.lazy(() => import('./pages/MainSite.jsx'));
 const AdminSite = React.lazy(() => import('./manage-panel/ManagePanel.jsx'));
-const InvitationTemplatePage = React.lazy(() => import('./pages/InvitationTemplates.jsx'));
+const InvitationTemplatePage = React.lazy(() => import('./invitation-templates/InvitationTemplatePage.jsx'));
 const NotFound = React.lazy(() => import('./pages/NotFound.jsx'));
 
 const routes = [
@@ -25,7 +25,7 @@ const routes = [
     ),
   },
   {
-    path: '/invitation/:id',
+    path: '/invitation/:id', // Убедись, что этот маршрут есть
     element: (
       <Suspense fallback={<div>Loading Invitation Template...</div>}>
         <InvitationTemplatePage />

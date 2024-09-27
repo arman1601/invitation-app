@@ -1,9 +1,13 @@
 import './managePanel.css';
+import { Navbar } from './components/navbar/NavBar';
 
 const ManagePanel = () => {
     return (
-        <div>
-            <h1>Manage Panel</h1>
+        <div className='manage-panel-cont'>
+            <Navbar />
+            <div className='content'>
+                
+            </div>
         </div>
     );
 };
