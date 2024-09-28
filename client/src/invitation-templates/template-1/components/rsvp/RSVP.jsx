@@ -11,8 +11,10 @@ const RSVP = () => {
                 <p>Budem rady vas videt! Prosim podverdit svoe prisutstvie na torjestve do 12 july 2024</p>
             </div>
             <div className='rsvp-cont-form'>
-                <span>name surname</span>
-                <input type='text' placeholder='Ivan Anna '/>
+                <div className='rsvp-cont-form-inner'>
+                    <span>name surname</span>
+                    <input type='text' placeholder='Ivan Anna '/>
+                </div>
                 <div className='rsvp-cont-checkbox'>
                     <h3>Karox eq masnakcel?</h3>
                     <div>
@@ -24,11 +26,16 @@ const RSVP = () => {
                         <label htmlFor="undefined">chgitem </label>
                     </div>
                     <div>
-                      <input type='radio' id='no'/>
-                      <label htmlFor="no">Voch,chenq karox</label>
+                        <input type='radio' id='no'/>
+                        <label htmlFor='no'>Voch, chenq karox</label>
                     </div>
                 </div>
-                <div className='rsvp-cont-checkbox'>
+                <div className='rsvp-cont-form-inner'>
+                    <span>name surname</span>
+                    <input type='text' placeholder='Ivan Anna '/>
+                </div>
+
+                {/* <div className='rsvp-cont-checkbox'>
                     <h3>predpochtenie po napitkam</h3>
                     <div>
                         <input type='checkbox' id='shampayn' name='shampayn'/>
@@ -50,7 +57,7 @@ const RSVP = () => {
                         <input type='checkbox' id='oxi' name='oxi'/>
                         <label htmlFor='oxi'>oxi</label>
                     </div>
-                </div>
+                </div> */}
                 <button type='submit'> submit</button>
             </div>
         </div>

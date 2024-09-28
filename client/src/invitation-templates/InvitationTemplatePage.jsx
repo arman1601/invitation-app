@@ -1,5 +1,6 @@
 import React, { useEffect, useState, Suspense } from 'react';
 import { useParams } from 'react-router-dom';
+import NotFound from '../pages/NotFound'
 
 // Импортируем компоненты шаблонов динамически
 const Template1 = React.lazy(() => import('./template-1/Template1')); // Убедись, что путь к компоненту верный
@@ -20,7 +21,7 @@ const InvitationTemplatePage = () => {
                 break;
             // Добавь дополнительные кейсы для других шаблонов
             default:
-                setTemplateComponent(<div>Шаблон не найден</div>);
+                setTemplateComponent(<NotFound />);
                 break;
         }
     }, [id]);

@@ -1,13 +1,13 @@
 .item-button {
-    border: 1px solid black;
+    border: 1px solid #3A3840;
     border-radius: 25px;
     padding: 0.7rem;
     width: 7rem;
     background-color: transparent;
-    color: black;
+    color: #3A3840;
 }
 
 .item-button:hover {
-    background-color: black;
+    background-color: #3A3840;
     color: #fff;
 }

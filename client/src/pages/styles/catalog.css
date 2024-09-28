@@ -7,33 +7,43 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #3A3840;
 }
 
 .productList-cont h1 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+    font-size: 4rem; /* Меньше для мобильных */
+    font-weight: 100;
+    margin-bottom: 4rem;
+}
+
+.productList-cont h1 span {
+    border: 1px solid #3A3840;
+    border-radius: 30px;
+    background-color: #3A3840;
+    color: #D8D8D8;
+    text-align: center;
+    font-size: 1.5rem; /* Меньше для мобильных */
+    padding: 1rem 6rem;
 }
 
 .productList-cont ul {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
     padding: 1rem 0;
     margin-bottom: 2rem;
     list-style: none;
 }
 
 .productList-cont ul li {
-    font-size: 1.2rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid black;
+    font-size: 1rem;
+    padding: 0 2rem 1rem 2rem;
+    border-bottom: 1px solid #D8D8D8;
     cursor: pointer;
     transition: color 0.3s, border-bottom-color 0.3s;
 }
 
 .productList-cont ul li:hover {
-    color: #333;
-    border-bottom-color: #333;
+    border-bottom-color:#3A3840;
 }
 
 .itemCard {
@@ -66,13 +76,19 @@
 
     .productList-cont h1 {
         font-size: 4rem;
+        margin-bottom: 10rem;
+        margin-top: 5rem;
     }
 
     .productList-cont ul li {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
+        font-weight: 100;
     }
 
     .itemCard {
         grid-template-columns: repeat(3, 1fr); /* 3 карточки в строке на больших экранах */
+    }
+    .productList-cont {
+        color: #3A3840;
     }
 }

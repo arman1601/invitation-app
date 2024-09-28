@@ -2,14 +2,13 @@
     font-size: 1.3rem;
     margin: 0 auto;
     max-width: 600px;
-    padding: 1em 2.4em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
 }
 
 .overview-cont h2 {
     font-size: 2.5rem;
     font-family: 'Caveat', cursive;
+    padding-bottom: 3rem;
 }

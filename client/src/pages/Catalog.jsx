@@ -4,7 +4,7 @@ import { ItemCard } from '../components/item-card/ItemCard';
 export const Catalog = () => {
     return (
         <div className='productList-cont'>
-            <h1>HARSANIQI HRAVER</h1>
+            <h1>HARSANIQI <br /> <span>hraver</span></h1>
             <div className='productList-items'>
                 <ul>
                     <li>Wedding</li>

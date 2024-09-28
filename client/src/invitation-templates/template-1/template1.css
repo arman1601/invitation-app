@@ -19,6 +19,7 @@
     color: #222;
     text-align: center;
     background-color: #b6b2b2;
+    background-color: #fbf6f2;
     margin: 0;
     padding: 0;
     border:0;
@@ -51,6 +52,19 @@ ul li{list-style: none;}
 img{vertical-align: top;width:100%;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+.template1 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.template1 main h2 {
+  font-size: 2.5rem;
+  font-family: 'Caveat', cursive;
+}
   
   /* Desktop Styles */
   @media (min-width: 600px) {

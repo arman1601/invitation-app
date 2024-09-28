@@ -16,11 +16,11 @@
 }
 
 .createOrder-cont span {
-    border: 1px solid black;
-    border-radius: 15px;
-    background-color: black;
+    border: 1px solid #3A3840;
+    border-radius: 30px;
+    background-color: #3A3840;
     color: #D8D8D8;
-    padding: 0.5rem 3rem;
+    padding: 1rem 6rem;
     text-align: center;
     font-size: 1.5rem;
 }

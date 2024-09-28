@@ -3,19 +3,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
-    padding: 2rem;
+    gap: 1rem;
     width: 60%;
     margin: 0 auto;
 }
 
-
-.template1 h2 {
-    font-size: 2.5rem;
+.template1-details-cont h3 {
+    font-size: 2rem;
     font-family: 'Caveat', cursive;
-    margin-top: 6rem;
-    margin-bottom: 3rem;
 }
+    
 .details-heading {
     font-weight: bold;
     text-transform: uppercase;
@@ -33,7 +30,7 @@
     background-attachment: scroll;
     border-radius: 15px;
     position: relative; /* Это позволит нам позиционировать псевдоэлемент внутри контейнера */
-    background-image: url('../../img/download.jpg'); /* Основное изображение фона */
+    background-image: url('../../media/download.jpg'); /* Основное изображение фона */
     background-size: cover;
     background-position: center;
 }
