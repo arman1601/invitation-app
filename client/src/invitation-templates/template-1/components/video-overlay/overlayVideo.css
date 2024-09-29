@@ -25,9 +25,10 @@
 .enter-button {
     z-index: 1;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
+    background: url('../../media/play.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 7rem; 
+    height: 7rem;
+    cursor: pointer;   
 }

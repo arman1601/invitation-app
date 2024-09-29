@@ -1,0 +1,10 @@
+img {
+    width: 25rem;
+    height: 30rem; 
+    border-radius: 15px;
+}
+
+img:hover {
+    width: 30rem;
+    transition: 1s;
+}

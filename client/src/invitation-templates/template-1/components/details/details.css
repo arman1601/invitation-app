@@ -34,7 +34,10 @@
     background-size: cover;
     background-position: center;
 }
-
+.details-background:hover {
+    width: 30rem;
+    transition: 1s;
+}
 .details-background::before {
     content: '';
     position: absolute;
@@ -42,7 +45,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../../img/download.jpg'); /* Дублируем то же изображение */
+    background-image: url('../../media/download.jpg'); /* Дублируем то же изображение */
     background-size: cover;
     background-position: center;
     transform: rotate(-10deg); /* Поворачиваем изображение на 90 градусов */

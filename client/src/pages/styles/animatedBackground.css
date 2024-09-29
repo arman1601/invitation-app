@@ -1,0 +1,39 @@
+
+  
+  .background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #D8D8D8;
+
+  }
+  
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.2); 
+    backdrop-filter: blur(2px); /* Применяем размытие к фону */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .hello-world {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+  }
+  

@@ -1,5 +1,6 @@
 import './rsvp.css';
 import { useState } from 'react';
+import Button from '../../../common/button/Button';
 
 const RSVP = () => {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -58,8 +59,9 @@ const RSVP = () => {
                         <label htmlFor='oxi'>oxi</label>
                     </div>
                 </div> */}
-                <button type='submit'> submit</button>
             </div>
+            <Button text={'Submit'}/>
+
         </div>
     )
 };

@@ -5,14 +5,16 @@ import { AboutUs } from "./AboutUs";
 import { Catalog } from "./Catalog";
 import { CustomOffer } from "./CustomOffer";
 import { Footer } from "./Footer";
+import AnimatedBackground from "./AnimatedBackground";
 
 const MainSite = () => {
     return (
         <>
-            <Header />
+            {/* <Header /> */}
             <Navbar />
             <main>
-                <section id="welcome"><WelcomePage /></section>
+                {/* <section id="welcome"><WelcomePage /></section> */}
+                <section id="welcome"><AnimatedBackground /></section>
                 <section id="about"><AboutUs /></section>
                 <section id="catalog"><Catalog /></section>
                 <section id="contacts"><CustomOffer /></section>

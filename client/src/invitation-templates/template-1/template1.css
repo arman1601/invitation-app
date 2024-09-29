@@ -15,7 +15,7 @@
     scroll-behavior: smooth;
 } */
 .template1 {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Montserratarm-Light', 'Quicksand', sans-serif;
     color: #222;
     text-align: center;
     background-color: #b6b2b2;
@@ -62,8 +62,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 
 .template1 main h2 {
-  font-size: 2.5rem;
-  font-family: 'Caveat', cursive;
+  font-size: 3.5rem;
+  font-family: 'Karlotte', cursive;
+  letter-spacing: 2px;
 }
   
   /* Desktop Styles */
@@ -72,4 +73,18 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
       font-size: 18px;
     }
   }
-  
+
+@font-face {
+  font-family: Karlotte;
+  src: url('./fonts/Karlotte.woff');
+}
+
+@font-face {
+  font-family: Montserratarm;
+  src: url('./fonts/Montserratarm-Regular.otf');
+}
+
+@font-face {
+  font-family: Montserratarm-Light;
+  src: url('./fonts/Montserratarm-Light.otf');
+}
