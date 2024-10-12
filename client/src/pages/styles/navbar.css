@@ -1,17 +1,19 @@
 .navbar {
     position: fixed;
-    bottom: 1rem;
+    bottom: 3rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
-    font-family: Montserratarm-Regular;
-    background: rgba(14, 13, 13, 0.5);
-    backdrop-filter: blur(10px);
+    font-family: montserratarm-light;
+    background: rgba(255, 254, 254,0.2);
+    backdrop-filter: blur(2px);
     border-radius: 18px;
-    padding: 0.5rem 1rem;
     transition: all 0.3s ease;
-    width: 100%;
-    max-width: 600px;
+    max-width: 100%;
+    min-width: 300px;
+    padding: 1rem 0;
+    padding-left: 0.5rem;
+    font-size: 1rem;
 }
 
 .navbar-list {
@@ -21,19 +23,13 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    color: #fff;
     width: 100%;
     gap: 1rem;
 }
 
-.navbar-item {
-    font-weight: 400;
-}
-
 .navbar-item a {
     display: inline-block;
-    padding: 0.7rem 2rem;
-    color: white;
+    color: black;
     text-decoration: none;
     background: none;
     border: none;
@@ -41,7 +37,12 @@
     transition: color 0.2s, background-color 0.2s;
 }
 
+
 .top-button {
+    display: none;
+}
+
+.mobile-only {
     display: none;
 }
 
@@ -71,12 +72,20 @@
         display: none;
     }
 
-    .top-button,.navbar-item button {
-        display: flex;
+    .mobile-only {
+        display: inline;
+        padding: 1rem 4rem 1rem 4rem;
+
+    }
+    .top-button,.navbar-item button,.navbar-item-order {
+        display: grid;
+        grid-template-columns:1fr 1fr;
         background: rgba(255, 254, 254,0.5);
         border: 1px solid rgba(255, 254, 254,0.5);
-        font-size: 1.3rem;
         padding: 1rem 4rem 1rem 4rem;
+
+        border-radius: 30px;
+        font-size: 1.3rem;
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -84,3 +93,29 @@
     }
 }
 
+
+.navbar-item.active a {
+    border-radius: 15px;
+    background-color: rgb(255, 254, 254);
+    border-color:  rgb(255, 254, 254);
+    padding: 1rem 0.5rem;
+}
+
+.navbar-item-order a {
+    background-color: #3A3840;
+    border: 1px solid #3A3840;
+    border-radius: 15px;
+    padding: 0;
+    margin: 0;
+    padding: 0.8rem 0.5rem;
+    margin-right: 1rem;
+    list-style: none;
+    color: rgb(255, 254, 254);
+    text-decoration: none;
+}
+
+.navbar-item-order a:hover {
+    background-color: rgb(255, 254, 254);
+    border-color:  rgb(255, 254, 254);
+    color: #3A3840;
+}

@@ -9,19 +9,23 @@
     font-weight: 100;
     box-sizing: border-box;
     color: #3A3840;
+    font-family: montserratarm-light;
 }
 
 .personalMaket h1 {
     font-size: 4rem; /* Меньше для мобильных */
     font-weight: 100;
-    margin-bottom: 1rem;
+    font-family: montserratarm-regular;
+    letter-spacing: 1.2px;
+    margin-bottom: 0.3rem;
 }
 
 .personalMaket h2 {
     font-size: 2rem; /* Меньше для мобильных */
+    letter-spacing: 0.5px;
 }
 
-.personalMaket h3 {
+.personalMaket_desc_price h3 {
     border: 1px solid #3A3840;
     border-radius: 30px;
     background-color: #3A3840;
@@ -37,8 +41,9 @@
     background-color: #3A3840;
     color: #D8D8D8;
     text-align: center;
-    font-size: 2rem; /* Меньше для мобильных */
-    padding: 1rem 6rem;
+    font-size: 1.5rem; /* Меньше для мобильных */
+    padding: 1rem 4rem;
+    font-family: montserratarm-regular;
 }
 
 .personalMaket_desc {
@@ -62,24 +67,26 @@
 .personalMaket_desc ul {
     list-style-type: circle;
     /* padding-left: 1.5rem; */
-    font-size: 1.5rem; /* Меньше для мобильных */
+    font-size: 1.3rem; /* Меньше для мобильных */
     text-align: left;
+    display: grid;
+    gap: 2rem;
+    color: black;
 }
 
 .personalMaket_desc ul li {
     padding: 0.1rem;
+    list-style-type:circle; 
+    list-style-position: outside;
 }
 
-.personalMaket_desc_price h2,h3 {
+.personalMaket_desc_price {
+    font-family: montserratarm-regular;
+}
+.personalMaket_desc_price h2 {
     margin: 0;
     font-size: 2rem;
 }
-
-.personalMaket_desc_price h3 {
-    padding: 1rem 3rem 1rem 3rem;
-    text-align: center;
-}
-
 
 @media (min-width: 768px) {
     .personalMaket {
@@ -88,7 +95,7 @@
     }
 
     .personalMaket h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .personalMaket h2 {
@@ -97,19 +104,22 @@
 
     .personalMaket h3 {
         padding: 0.7rem 3rem;
-        font-size: 1.5rem;
+        /* font-size: 1.5rem; */
     }
 
+    .personalMaket span {
+        font-size: 1.5rem;
+    }
     .personalMaket_desc {
-        display: flex;  /* Используем Flexbox */
+        display: grid;
+        grid-template-columns: 3fr 2fr;
         align-items: center;  /* Центрируем по вертикали */
-        justify-content: space-between;  /* Равномерное распределение по горизонтали */
+        justify-content: space-between; 
         width: 80%;  /* Делаем блок меньше, чтобы элементы выглядели более компактно */
         padding: 2rem;
         gap: 2rem;
         box-sizing: border-box;
-        display: grid;
-        grid-template-columns: 2fr 1fr;
+        margin-top: 2rem;
         
     }
     
@@ -122,15 +132,22 @@
         /* border-left: 1px solid black; */
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
-        justify-content: end;
+        align-items: center;
+        justify-content: center;
         border-left: 1px solid black;
-        padding: 3rem;
-
+        font-family: montserratarm-regular;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 
-    .personalMaket_desc ul {
+    .personalMaket_desc_price h2 {
         font-size: 2rem;
+        padding: 5px;
+    }
+
+
+    .personalMaket_desc ul {
+        font-size: 1.3rem;
     }
 }
 

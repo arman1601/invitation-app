@@ -14,7 +14,7 @@ const MainSite = () => {
             <Navbar />
             <main>
                 {/* <section id="welcome"><WelcomePage /></section> */}
-                <section id="welcome"><AnimatedBackground /></section>
+                <section id="main"><AnimatedBackground /></section>
                 <section id="about"><AboutUs /></section>
                 <section id="catalog"><Catalog /></section>
                 <section id="contacts"><CustomOffer /></section>

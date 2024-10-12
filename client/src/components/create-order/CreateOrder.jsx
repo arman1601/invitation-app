@@ -5,23 +5,26 @@ export const CreateOrder = () => {
     return (
         <div className='createOrder-cont'>
             <h2>
-                Create <br /> 
-                <span>Order</span>
+                ՊԱՏՎԻՐԵԼ <br /> 
+                <span>ՀՐԱՎԵՐ</span>
             </h2>
             <div className='createOrder-cont-desc'>
                 <p>
-                    Lorem ipsum dolor, sitf amet consectetur adipisicing elit. Amet veritatis odit
-                    tempora temporibus animi! Natus mollitia corporis nesciunt porro iste!
+                    Էլեկտրոնային հրավեր պատվիրելու համար անհրաժեշտ է գրել մեզ ակնթարթային մեսենջերներից մեկում
+                    կամ թողնել հարցում, և մենք կկապվենք ձեզ հետ։
                 </p>
                 <div className='submitOrder-cont'>
                     <ItemButton 
                         title={'WhattsApp'}
+                        dark={true}
                     />
                     <ItemButton 
                         title={'Telegram'}
+                        dark={true}
                     />
                     <ItemButton 
-                        title={'Zayavka'}
+                        title={'Պատվիրել'}
+                        dark={true}
                     />
                 </div>
             </div>

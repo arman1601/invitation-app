@@ -9,8 +9,8 @@ export const ItemCard = () => {
                 <p>Memories - 15000AMD</p>
             </div>
             <div className='itemCard-buttons'>
-                <ItemButton title={'demo'} />
-                <ItemButton title={'buy'} />
+                <ItemButton title={'Տեսնել'} />
+                <ItemButton title={'Պատվիրել'} dark={true}/>
             </div>
         </div>
     )

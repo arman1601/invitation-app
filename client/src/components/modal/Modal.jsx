@@ -1,13 +1,16 @@
 import { useState } from 'react';
+import { sanitizeInput } from '../../common/validation/validation';
 import './modal.css';
 
 export const Modal = ({ isOpen, onClose }) => {
-    const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+    const [formData, setFormData] = useState({ name: '', phone: '', message: '' });
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        setFormData((prevData) => ({ ...prevData, [name]: value }));
+        setFormData((prevData) => ({ ...prevData, [name]: sanitizeInput(value) }));
     };
+
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -15,12 +18,13 @@ export const Modal = ({ isOpen, onClose }) => {
         onClose();
     };
 
+
     if (!isOpen) return null;
 
     return (
         <div className='modal-overlay'>
             <div className='modal'>
-                <button className='close-button' onClick={onClose}>×</button>
+                <button className='close-button' onClick={() => onClose()}>×</button>
                 <h2>Send a Request</h2>
                 <form onSubmit={handleSubmit}>
                     <input type='text' name='name' placeholder='Name' value={formData.name} onChange={handleChange} required />

@@ -10,15 +10,15 @@ const AnimatedBackground = () => {
     const canvas = canvasRef.current;
     const context = canvas.getContext('2d');
     const overlay = overlayRef.current;
-    const particleCount = 100;
+    const particleCount =20;
 
     class Particle {
       constructor() {
         this.x = Math.random() * overlay.clientWidth; // Начальное положение внутри overlay
         this.y = Math.random() * overlay.clientHeight; // Начальное положение внутри overlay
-        this.radius = Math.random() * 5 + 2;
+        this.radius = Math.random() * 5 + 100;
         this.speedX = Math.random() * 0.2;
-        this.speedY = Math.random() * 0.2;
+        this.speedY = Math.random() * 0.1;
         this.color = this.getRandomColor();
       }
 
@@ -67,8 +67,8 @@ const AnimatedBackground = () => {
 
     const resizeCanvas = () => {
       if (overlay) { // Проверяем, что overlay существует
-        canvas.width = overlay.clientWidth; // Устанавливаем ширину canvas равной ширине overlay
-        canvas.height = overlay.clientHeight; // Устанавливаем высоту canvas равной высоте overlay
+        canvas.width = overlay.clientWidth / 2; // Устанавливаем ширину canvas равной ширине overlay
+        canvas.height = overlay.clientHeight / 2; // Устанавливаем высоту canvas равной высоте overlay
         init(); // Инициализируем частицы только после изменения размера
       }
     };
@@ -84,10 +84,13 @@ const AnimatedBackground = () => {
   }, []);
 
   return (
-    <div className="background-container">
+    <div className="background-container" id='#main'>
       <canvas ref={canvasRef} />
       <div className="overlay" ref={overlayRef}>
-        <h1 className="hello-world">Hello World</h1>
+        <h1>Ստեղծում ենք <br /> էլեկտրոնային <br /> հրավիրատոմսեր</h1>
+        <p>
+            Էլեկտրոնային հրավերներ հարսանիքի, ծննդյան, <br /> միջոցառման համար (դասավորություններ)
+        </p>
       </div>
     </div>
   );

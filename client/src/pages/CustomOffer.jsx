@@ -6,16 +6,17 @@ export const CustomOffer = () => {
     return (
         <div className='customOffer-cont'>
             <CustomOfferDesc 
-                title={'Personal'}
-                li1={'Lorem ipsum dolor sit amet consectetur adipisicing elit.cum accusantium alias deserunt voluptatibus'}
-                li2={' A modi tenetur qui, deleniti iusto unde est'}
-                li3={'enim corporis, expedita cum'}
-                price={9500}
-                priceText={'Price Is'}
+                title={'ԱՆՀԱՏԱԿԱՆ'}
+                subTitle={'ԴԻԶԱՅՆ'}
+                li1={'Ձեզ համար անհատական ​​դիզայնով նոր հրավերի անհատական ​​մշակում'}
+                li2={'Ձեր ցանկացած ցանկությունն իրականացնելու ունակություն'}
+                li3={'Срок создания: 5-10 дней'}
+                price={'50000 др.'}
             />
             <CustomOfferDesc 
-                title={'Personal'}
-                li1={'Lorem ipsum dolor sit amet consectetur adipisicing elit.cum accusantium alias deserunt voluptatibus'}
+                title={'ԼՐԱՑՈՒՑԻՉ'}
+                subTitle={'ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ'}
+                li1={'Լրացուցիչ բլոկի ինտեգրում ցանկացած դասավորության մեջ'}
                 li2={' A modi tenetur qui, deleniti iusto unde est'}
                 li3={'enim corporis, expedita cum'}
                 price={9500}

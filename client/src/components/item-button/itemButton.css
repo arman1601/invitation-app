@@ -5,9 +5,22 @@
     width: 7rem;
     background-color: transparent;
     color: #3A3840;
+    transition:0.5s;
 }
 
 .item-button:hover {
     background-color: #3A3840;
     color: #fff;
+}
+
+.item-button-dark {
+    background-color: #3A3840;
+    color: #fff;
+    font-family: montserratarm-light;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.item-button-dark:hover {
+    color: #3A3840;
+    background-color: inherit;
 }

@@ -1,17 +1,18 @@
 
-  
   .background-container {
     position: relative;
     width: 100%;
     height: 100vh;
     background-color: #D8D8D8;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   canvas {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 10;
+    left: 50;
     z-index: 1;
   }
   
@@ -22,18 +23,32 @@
     margin: 0 auto;
     width: 100%;
     height: 100%;
+    border-radius: 30px;
     background: rgba(216, 216, 216, 0.2); 
-    backdrop-filter: blur(2px); /* Применяем размытие к фону */
+    backdrop-filter: blur(50px); /* Применяем размытие к фону */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
     z-index: 2;
+    color: #3A3840;
+
   }
   
-  .hello-world {
-    color: white;
-    font-size: 48px;
-    font-weight: bold;
+.overlay h1 {
+    font-family: montserratarm-regular;
+    font-weight: 500;
+    font-size: 4rem;
     text-align: center;
-  }
+    line-height: 60px;
+}
+
+.overlay p {
+  font-family: montserratarm-light;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 25px;
+}
+
   

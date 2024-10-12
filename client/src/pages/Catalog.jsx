@@ -4,12 +4,12 @@ import { ItemCard } from '../components/item-card/ItemCard';
 export const Catalog = () => {
     return (
         <div className='productList-cont'>
-            <h1>HARSANIQI <br /> <span>hraver</span></h1>
+            <h1>ԸՆՏՐԵՔ<br /> <span>ՀՐԱՎԵՐ</span></h1>
             <div className='productList-items'>
                 <ul>
-                    <li>Wedding</li>
-                    <li>Otkritki</li>
-                    <li>Den Rojdenya</li>
+                    <li>Հարսանիք</li>
+                    <li>Բացիկներ</li>
+                    <li>Տարեդարձ</li>
                 </ul>
                 <div className='itemCard'>
                     <ItemCard />
