@@ -1,54 +1,82 @@
+/* Основные стили для всех устройств */
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #D8D8D8;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .background-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-color: #D8D8D8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  canvas {
-    position: absolute;
-    top: 10;
-    left: 50;
-    z-index: 1;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-    background: rgba(216, 216, 216, 0.2); 
-    backdrop-filter: blur(50px); /* Применяем размытие к фону */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    z-index: 2;
-    color: #3A3840;
+canvas {
+  position: absolute;
+  top: 20;
+  left: 50;
+  z-index: 1;
+}
 
-  }
-  
+/* Контейнер для текста */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background: rgba(216, 216, 216, 0.2);
+  background: rgba(252, 251, 251, 0.2);
+
+  backdrop-filter: blur(50px); /* Размытие фона */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  z-index: 2;
+  color: #3A3840;
+  text-align: center;
+  padding: 1rem;
+}
+
 .overlay h1 {
-    font-family: montserratarm-regular;
-    font-weight: 500;
-    font-size: 4rem;
-    text-align: center;
-    line-height: 60px;
+  font-family: montserratarm-regular;
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 1.2;
 }
 
 .overlay p {
   font-family: montserratarm-light;
-  text-align: center;
-  font-size: 1.2rem;
-  line-height: 25px;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
-  
+/* Адаптация для планшетов */
+@media (min-width: 768px) {
+  .overlay h1 {
+      font-size: 3rem;
+      line-height: 1.3;
+  }
+
+  .overlay p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+  }
+}
+
+/* Адаптация для десктопов */
+@media (min-width: 1024px) {
+  .overlay h1 {
+      font-size: 3rem;
+      line-height: 1.4;
+      font-weight: 100;
+      
+  }
+
+  .overlay p {
+      font-size: 1.5rem;
+      line-height: 1.8;
+  }
+}

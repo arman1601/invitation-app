@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: center;
     padding: 2rem;
+    font-family: montserratarm-light;
 }
 
 .itemCard-cont p {
@@ -16,7 +17,6 @@
 .image {
     width: 100%;
 }
-
 
 .itemCard-buttons {
     display: flex;

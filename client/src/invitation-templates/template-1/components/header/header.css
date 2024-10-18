@@ -3,11 +3,12 @@
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-    height: 90vh;
+    height: 50vh; /* Начальная высота для мобильных устройств */
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
+    position: relative; /* Необходимо для того, чтобы заголовок мог выйти за пределы */
 }
 
 .template1-heading {
@@ -15,16 +16,44 @@
     flex-direction: column;
     color: #ffffff;
     font-family: 'Caveat', cursive;
-    font-size: 3em;
+    font-size: 2.5rem; /* Меньший размер для мобильных */
     font-weight: normal;
-    text-shadow: 0 0 10px #000;
+    text-shadow: 0 0 5px #000;
+    position: relative;  /* Позволяет двигать элемент */
 }
 
 .template1-heading-subtext {
     color: #fff;
     font-family: 'Caveat', cursive;
-    font-size: 1.2em;
+    font-size: 1rem;
 }
-  
 
-  
+/* Адаптация для планшетов и десктопов */
+@media (min-width: 768px) {
+    .template1-header {
+        height: 70vh; /* Увеличиваем высоту */
+    }
+
+    .template1-heading {
+        font-size: 3.5rem; /* Увеличиваем шрифт */
+    }
+
+    .template1-heading-subtext {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .template1-header {
+        height: 90vh; /* Еще большее увеличение высоты */
+    }
+
+    .template1-heading {
+        font-size: 4.5rem;
+        top: 10px;
+    }
+
+    .template1-heading-subtext {
+        font-size: 1.8rem;
+    }
+}

@@ -2,20 +2,42 @@ import './styles/aboutUs.css';
 
 export const AboutUs = () => {
     return (
-        <div className='aboutUs-cont'>
-            <div className='aboutUs-desc'>
-                <div>
-                    <h3>ընտրելով էլեկտրոնային</h3>
-                    <h2>ՀՐԱՎԻՐԱՏՈՄՍԵՐ</h2>
-                </div>
-                <ul>
-                    <li>Ձեռք բերելով էլեկտրոնային հրավեր՝ դուք ստանում եք 1 տարի գործող անձնական հղում</li>
-                    <li>Միջոցառման մասին բոլոր տեղեկությունները մեկ հղումով՝ ամսաթիվ, վայր, հագուստի կոդը, RSVP և այլն:</li>
-                    <li>Excel աղյուսակը հարմարեցված է ձեզ համար հյուրերի պատասխաններով:</li>
-                    <li>Ճիշտ է աշխատում ցանկացած հեռախոսի, նոութբուքի և համակարգչի վրա:</li>
-                </ul>
+        <section className="aboutUs-cont">
+            <div className='aboutUs-cont-head'>
+                <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur nihil consequuntur laudantium architecto quaerat fuga eius temporibus</h1>
             </div>
-            <img src='./img/iphone.png' alt='image' />
-        </div>
+            <div className='aboutUs-cont-details'>
+                <div>
+                    <img src="./img/vector.svg" alt="" />
+                    <h2>text</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur nihil consequuntur laudantium architecto quaerat fuga eius temporibus</p>                    
+                </div>
+                <div>
+                    <img src="./img/vector.svg" alt="" />
+                    <h2>text</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur nihil consequuntur laudantium architecto quaerat fuga eius temporibus</p>
+                </div>
+                <div>
+                    <img src="./img/vector.svg" alt="" />
+                    <h2>text</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur nihil consequuntur laudantium architecto quaerat fuga eius temporibus</p>
+                </div>
+                <div>
+                    <img src="./img/vector.svg" alt="" />
+                    <h2>text</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur nihil consequuntur laudantium architecto quaerat fuga eius temporibus</p>
+                </div>
+                <div>
+                    <img src="./img/vector.svg" alt="" />
+                    <h2>text</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur nihil consequuntur laudantium architecto quaerat fuga eius temporibus</p>
+                </div>
+                <div>
+                    <img src="./img/vector.svg" alt="" />
+                    <h2>text</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur nihil consequuntur laudantium architecto quaerat fuga eius temporibus</p>
+                </div>
+            </div>
+        </section>
     )
 }

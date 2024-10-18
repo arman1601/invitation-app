@@ -10,7 +10,7 @@
     max-width: 800px;
     margin: auto;
     color: black;
-    width: 50%;
+    max-width: 600px;
     padding-bottom: 1rem;
     font-family: 'Montserratarm-Light';
     gap: 2rem;
@@ -143,4 +143,13 @@ input[type='checkbox'] {
 }
 
 
+@media (max-width: 480px) {
+    .rsvp-cont {
+        width: 100%;
+    }
 
+    .rsvp-cont-header p {
+        width: 90%;
+    }
+    
+}

@@ -7,15 +7,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 4rem;
     color: #3A3840;
     font-family: montserratarm-light;
 }
 
 .productList-cont h1 {
-    font-size: 4rem; /* Меньше для мобильных */
-    font-weight: 100;
-    font-family: montserratarm-regular;
+    font-size: 2rem; /* Меньше для мобильных */
+    font-weight: 500;
     letter-spacing: 1.2px;
+    line-height: 1.4;
 }
 
 .productList-cont h1 span {
@@ -26,11 +27,11 @@
     text-align: center;
     font-size: 1.5rem; /* Меньше для мобильных */
     padding: 1rem 4rem;
-    font-family: montserratarm-regular;
 }
 
 .productList-cont ul {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     margin-bottom: 2rem;
     list-style: none;
@@ -38,10 +39,11 @@
 
 .productList-cont ul li {
     font-size: 1rem;
-    padding: 0 3rem 1rem 3rem;
+    padding-bottom: 1.5rem;
     border-bottom: 1px solid #D8D8D8;
     cursor: pointer;
     transition: color 0.3s, border-bottom-color 0.3s;
+    box-sizing: border-box;
 }
 
 .productList-cont ul li:hover {
@@ -64,7 +66,7 @@
 
     .productList-cont h1 {
         font-size: 2.5rem;
-        line-height: 40px;
+        line-height: 1.3;
     }
 
     .productList-cont ul li {
@@ -79,7 +81,12 @@
 
     .productList-cont h1 {
         font-size: 2.5rem;
-        margin-bottom: 10rem;
+        margin-bottom: 8rem;
+    }
+
+    .productList-cont ul {
+        width: 50%;
+        margin: 0 auto;
     }
 
     .productList-cont ul li {
@@ -94,3 +101,4 @@
         color: #3A3840;
     }
 }
+

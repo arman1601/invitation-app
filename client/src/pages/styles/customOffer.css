@@ -1,10 +1,11 @@
 /* styles/customOffer.css */
 .customOffer-cont {
     height: auto;
-    width: 100%;
+    width: 80%;
     max-width: 1200px;
+    display: flex;
+    flex-direction: column;
     gap:2rem;
-    padding: 3rem;
     margin: 0 auto;
     color: #3A3840;
 }
@@ -15,6 +16,7 @@
         min-width: 300px; 
     }
     .customOffer-cont {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -28,6 +30,6 @@
     .customOffer-cont {
         padding: 2rem;
         padding: 0;
-        gap: 0;
+        gap: 4rem;
     }
 }

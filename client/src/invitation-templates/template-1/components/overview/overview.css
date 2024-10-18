@@ -1,14 +1,54 @@
+/* Базовые стили для мобильных устройств (mobile-first) */
 .overview-cont {
-    font-size: 1.3rem;
+    font-size: 1rem; /* Уменьшенный размер текста для мобильных устройств */
     margin: 0 auto;
-    max-width: 600px;
+    padding: 1rem; /* Добавляем отступы для мобильных устройств */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
+    width: 90%;
 }
 
 .overview-cont h2 {
-    font-size: 2.5rem;
+    font-size: 1.8rem; /* Заголовок немного меньше для мобильных экранов */
     font-family: 'Karlotte', cursive;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem; /* Уменьшаем отступы на мобильных устройствах */
+}
+
+.overview-cont p {
+    line-height: 1.5; /* Увеличиваем межстрочный интервал для удобства чтения */
+    color: #555; /* Текст становится мягче для глаз */
+}
+
+/* Стили для планшетов (min-width: 768px) */
+@media (min-width: 768px) {
+    .overview-cont {
+        font-size: 1.2rem; /* Увеличенный размер текста для планшетов */
+        padding: 2rem; /* Добавляем больше отступов */
+        max-width: 80%; /* Ограничиваем ширину на планшетах */
+    }
+
+    .overview-cont h2 {
+        font-size: 2.2rem; /* Увеличенный заголовок */
+        padding-bottom: 2.5rem; /* Более сбалансированные отступы */
+    }
+}
+
+/* Стили для десктопов (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .overview-cont {
+        font-size: 1.3rem; /* Оптимальный размер текста для больших экранов */
+        max-width: 600px;
+        padding: 2.5rem; /* Добавляем больше пространства */
+    }
+
+    .overview-cont h2 {
+        font-size: 2.5rem; /* Более крупный заголовок для десктопов */
+        padding-bottom: 3rem; /* Больше пространства под заголовком */
+    }
+
+    .overview-cont p {
+        line-height: 1.6; /* Увеличиваем межстрочный интервал для больших экранов */
+    }
 }

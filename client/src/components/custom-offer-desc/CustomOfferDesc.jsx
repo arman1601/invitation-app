@@ -14,8 +14,8 @@ export const CustomOfferDesc = ({title,subTitle,li1,li2,li3,price,priceText}) =>
                     </ul>
                 </div>
                 <div className='personalMaket_desc_price'>
-                    <h2>Արժեքը սկսած</h2>
-                    <h3>{price}</h3>
+                    <h2>ԱՐԺԵՔԸ</h2>
+                    <h3><span>սկսած</span> {price}</h3>
                 </div>
             </div>
         </div>

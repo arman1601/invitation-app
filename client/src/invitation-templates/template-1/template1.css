@@ -1,36 +1,3 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    border:0;
-    outline: none;
-    width: 100%;
-    height: 100%;
-    font-size: 100%;
-    line-height: 1;
-    font-size: 14px;
-    -webkit-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    font-family: 'montserratarm-regular', sans-serif;
-    scroll-behavior: smooth;
-} */
-.template1 {
-    font-family: 'Montserratarm-Light', 'Quicksand', sans-serif;
-    color: #222;
-    text-align: center;
-    background-color: #b6b2b2;
-    background-color: #fbf6f2;
-    margin: 0;
-    padding: 0;
-    border:0;
-    outline: none;
-    width: 100%;
-    height: 100%;
-    font-size: 100%;
-    line-height: 1;
-    font-size: 14px;
-}
-    
 *,*:after,*:before {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -53,27 +20,6 @@ img{vertical-align: top;width:100%;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
-.template1 main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-}
-
-.template1 main h2 {
-  font-size: 3.5rem;
-  font-family: 'Karlotte', cursive;
-  letter-spacing: 2px;
-}
-  
-  /* Desktop Styles */
-  @media (min-width: 600px) {
-    body {
-      font-size: 18px;
-    }
-  }
-
 @font-face {
   font-family: Karlotte;
   src: url('./fonts/Karlotte.woff');
@@ -87,4 +33,94 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 @font-face {
   font-family: Montserratarm-Light;
   src: url('./fonts/Montserratarm-Light.otf');
+}
+
+.template1 {
+  font-family: 'Montserratarm-Light', 'Quicksand', sans-serif;
+  color: #222;
+  text-align: center;
+  background-color: #fbf6f2;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem; /* Base font size for mobile */
+  line-height: 1.4;
+}
+
+/* Стандартный макет для мобильных устройств */
+.template1 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* Уменьшить отступы для мобильных */
+}
+
+.template1 main h2 {
+  font-size: 2rem; /* Меньше заголовок для мобильных */
+  font-family: 'Karlotte', cursive;
+  letter-spacing: 1px;
+}
+
+.template1-header {
+  background-image: url('../../media/hero.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh; /* Меньшая высота для мобильных */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.template1-heading {
+  font-size: 2.5rem;
+  text-shadow: 0 0 5px #000;
+}
+
+.template1-heading-subtext {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Адаптация для планшетов и десктопов */
+@media (min-width: 768px) {
+  .template1 {
+      font-size: 1.2rem; /* Увеличение базового шрифта */
+  }
+
+  .template1 main h2 {
+      font-size: 3rem; /* Более крупный заголовок */
+  }
+
+  .template1-header {
+      height: 70vh; /* Увеличить высоту для планшетов */
+  }
+
+  .template1-heading {
+      font-size: 3.5rem; /* Крупный текст для заголовка */
+  }
+
+  .template1-heading-subtext {
+      font-size: 1.5rem;
+  }
+}
+
+/* Стили для больших экранов (десктопов) */
+@media (min-width: 1024px) {
+  .template1 main {
+      gap: 3rem; /* Увеличить отступы между блоками */
+  }
+
+  .template1-header {
+      height: 90vh; /* Максимальная высота для десктопов */
+  }
+
+  .template1-heading {
+      font-size: 4.5rem; /* Очень крупный заголовок */
+  }
+
+  .template1-heading-subtext {
+      font-size: 1.8rem;
+  }
 }

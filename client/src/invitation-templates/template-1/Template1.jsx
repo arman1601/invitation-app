@@ -25,7 +25,7 @@ const Template1 = () => {
             <div className='template1'>
             <Header />
             <main>
-                <Timer eventDate={'2024-10-5'}/>
+                <Timer eventDate={'2024-12-5'}/>
                 <Overview />
                 <h2>The Details</h2>
                 <Details iconClass="fa-map-marked-alt" heading="ekexeci" putImage={true}> 

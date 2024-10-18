@@ -1,0 +1,52 @@
+.informationPage-cont {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: montserratarm-light;
+}
+
+.informationPage-cont ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    font-size: 2.2rem;
+}
+
+.informationPage-cont ul li:first-child {
+    font-size: 1.3rem;
+    color: #fff;
+    background-color: black;
+    padding: 0 1rem;
+    max-width: 100%;
+    width:29rem;
+}
+
+.informationPage-cont ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.informationPage-cont ul span {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #505052;
+}
+
+.informationPage-cont button {
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    background-color:#3A3840;
+    color: #fff;
+}

@@ -1,0 +1,99 @@
+.promo-cont {
+    height: 100vh;
+    width: 100%;
+    background-color: #D8D8D8;
+    background-color: #fff;
+    font-family: montserratarm-light;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    color:#3A3840;
+}
+
+.promo-cont-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo-cont-text h1 {
+    font-size: 8rem;
+    font-weight: 700;
+    color: black;
+}
+
+.promo-cont-text p {
+    font-size: 1.5rem;
+}
+
+.promo-cont-slider {
+    width: 28rem;  /* Ширина контейнера слайдера */
+    height: 65%;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    overflow: hidden;  /* Обрезаем содержимое, которое выходит за рамки */
+    position: relative;
+    box-shadow: 10px 5px 20px rgba(58, 56, 64, 0.8); /* Мягкая размытая тень */
+
+}
+
+.slider-inner {
+    width: 100%;  /* Внутренний контейнер для изображения */
+    display: flex;
+    animation: scroll 33s ease-in-out infinite;  /* Анимация с эффектом плавного качания */
+}
+
+.promo-cont-slider img {
+    width: auto;
+    height: 100%;  /* Высота изображения адаптируется под высоту контейнера */
+}
+
+/* Анимация скролла изображения вверх-вниз */
+@keyframes scroll {
+    0% {
+        transform: translateY(-5%); /* Начальное положение */
+    }
+    50% {
+        transform: translateY(-65%); /* Почти до конца */
+    }
+    100% {
+        transform: translateY(-5%); /* Возвращаемся в исходное положение */
+    }
+}
+
+@media (max-width: 480px) {
+    .promo-cont {
+        height: 85vh;
+    }
+    .promo-cont-text h1 {
+        font-size: 5rem;
+        line-height: 1.2;
+    }
+
+    .promo-cont-text p {
+        font-size: 1.1rem;
+    }
+
+    .promo-cont-slider {
+        width: 75%;
+    }
+
+    .promo-cont-slider img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .promo-cont {
+        height: 120vh;
+    }
+}
+
+@media (min-width: 1400px) {
+    .promo-cont {
+        height: 100vh;
+    }
+}

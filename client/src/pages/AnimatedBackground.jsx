@@ -10,14 +10,14 @@ const AnimatedBackground = () => {
     const canvas = canvasRef.current;
     const context = canvas.getContext('2d');
     const overlay = overlayRef.current;
-    const particleCount =20;
+    const particleCount = 30;
 
     class Particle {
       constructor() {
         this.x = Math.random() * overlay.clientWidth; // Начальное положение внутри overlay
         this.y = Math.random() * overlay.clientHeight; // Начальное положение внутри overlay
-        this.radius = Math.random() * 5 + 100;
-        this.speedX = Math.random() * 0.2;
+        this.radius = Math.random() * 5 + 150;
+        this.speedX = Math.random() * 0.15;
         this.speedY = Math.random() * 0.1;
         this.color = this.getRandomColor();
       }
@@ -31,7 +31,6 @@ const AnimatedBackground = () => {
         this.x += this.speedX;
         this.y += this.speedY;
 
-        // Ограничиваем движение шариков в пределах overlay
         if (this.x < this.radius || this.x > overlay.clientWidth - this.radius) {
           this.speedX *= -1;
         }
@@ -61,20 +60,19 @@ const AnimatedBackground = () => {
         particle.update();
         particle.draw();
       });
-      context.filter = 'none'; // Сбрасываем эффект размытия после рисования
       requestAnimationFrame(animate);
     };
 
     const resizeCanvas = () => {
-      if (overlay) { // Проверяем, что overlay существует
-        canvas.width = overlay.clientWidth / 2; // Устанавливаем ширину canvas равной ширине overlay
-        canvas.height = overlay.clientHeight / 2; // Устанавливаем высоту canvas равной высоте overlay
-        init(); // Инициализируем частицы только после изменения размера
+      if (overlay) {
+        canvas.width = overlay.clientWidth / 2.5;
+        canvas.height = overlay.clientHeight / 2;
+        init();
       }
     };
 
-    resizeCanvas(); // Устанавливаем размеры при первом рендере
-    animate(); // Запускаем анимацию
+    resizeCanvas();
+    animate();
 
     window.addEventListener('resize', resizeCanvas);
 

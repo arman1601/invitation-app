@@ -10,12 +10,12 @@
 
 .item-button:hover {
     background-color: #3A3840;
-    color: #fff;
+    color: #D8D8D8;
 }
 
 .item-button-dark {
     background-color: #3A3840;
-    color: #fff;
+    color: #D8D8D8;
     font-family: montserratarm-light;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
