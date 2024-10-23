@@ -4,7 +4,7 @@ import { CreateOrder } from '../components/create-order/CreateOrder';
 
 export const CustomOffer = () => {
     return (
-        <div className='customOffer-cont'>
+        <section className='customOffer-cont'>
             <CustomOfferDesc 
                 title={'ԱՆՀԱՏԱԿԱՆ'}
                 subTitle={'ԴԻԶԱՅՆ'}
@@ -23,6 +23,6 @@ export const CustomOffer = () => {
                 priceText={'Price Is'}
             />
             <CreateOrder />
-        </div>
+        </section>
     )
 }

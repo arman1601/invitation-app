@@ -13,12 +13,12 @@ const MainSite = () => {
             <Navbar />
             <main>
                 {/* <section id="welcome"><WelcomePage /></section> */}
-                <section id="main"><AnimatedBackground /></section>
-                <section><PromoPage /></section>
-                <InformationPage />
-                <section id="about"><AboutUs /></section>
-                <section id="catalog"><Catalog /></section>
-                <section id="contacts"><CustomOffer /></section>
+                <section><AnimatedBackground /></section>
+                <PromoPage />
+                <AboutUs />
+                <InformationPage/>
+                <Catalog />
+                <CustomOffer />
             </main>
             <Footer />
         </>

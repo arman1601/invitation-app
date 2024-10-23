@@ -2,7 +2,7 @@ import './styles/promoPage.css';
 
 export const PromoPage = () => {
     return (
-        <section className='promo-cont'>
+        <section className='promo-cont' id='main'>
             <div className='promo-cont-text'>
                 <h1>INVITE ME</h1>
                 <p>ՀՐԱՎԵՐՆԵՐ, որոնց մասին խոսում են բոլորը</p>

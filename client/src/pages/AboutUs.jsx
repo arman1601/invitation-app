@@ -2,40 +2,61 @@ import './styles/aboutUs.css';
 
 export const AboutUs = () => {
     return (
-        <section className="aboutUs-cont">
+        <section className="aboutUs-cont" id='about'>
             <div className='aboutUs-cont-head'>
-                <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur nihil consequuntur laudantium architecto quaerat fuga eius temporibus</h1>
+                <h1>
+                    Աշխարհի ցանկացած կետից հյուրեր հավաքելու և նրանց զարմացնելու լավագույն միջոցը
+                    հրաշալի հրավերով, որը հիանալի տեսք ունի սմարթֆոնների, պլանշետների և նոութբուքերի վրա:
+                </h1>
             </div>
             <div className='aboutUs-cont-details'>
                 <div>
                     <img src="./img/vector.svg" alt="" />
-                    <h2>text</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur nihil consequuntur laudantium architecto quaerat fuga eius temporibus</p>                    
+                    <h2>Երաժշտական ​​ուղեկցում</h2>
+                    <p>
+                        Ֆոնային երաժշտությունը շքեղություն և մթնոլորտ է հաղորդում ձեր հրավերին:
+                        Հյուրերը կկարողանան դիտելիս երաժշտություն վայելել: Կարող եք նաև վերբեռնել ձեր սեփական երաժշտությունը
+                    </p>                    
                 </div>
                 <div>
                     <img src="./img/vector.svg" alt="" />
-                    <h2>text</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur nihil consequuntur laudantium architecto quaerat fuga eius temporibus</p>
+                    <h2>Տեքստի ճկուն կարգավորումներ</h2>
+                    <p>
+                        Ֆունկցիան թույլ է տալիս ստեղծել գրավիչ և եզակի տեքստային բովանդակություն՝ այն
+                        հարմարեցնելով ձեր նախասիրություններին և կարիքներին
+                    </p>
                 </div>
                 <div>
                     <img src="./img/vector.svg" alt="" />
-                    <h2>text</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur nihil consequuntur laudantium architecto quaerat fuga eius temporibus</p>
+                    <h2>Տարբեր կայքերի արգելափակումներ</h2>
+                    <p>
+                        Ստեղծեք ինտերակտիվ կայք տարբեր բլոկներով՝ պատկերի սլայդեր, հարցումներ, հագուստի կոդի գունային սխեման,
+                        հետհաշվարկի ժամանակաչափ, ամենօրյա ծրագիր, վայրի քարտեզներ և շատ ավելին։
+                    </p>
                 </div>
                 <div>
                     <img src="./img/vector.svg" alt="" />
-                    <h2>text</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur nihil consequuntur laudantium architecto quaerat fuga eius temporibus</p>
+                    <h2>Տարբեր կայքերի արգելափակումներ</h2>
+                    <p>
+                        Ստեղծեք ինտերակտիվ կայք տարբեր բլոկներով՝ պատկերի սլայդեր, հարցումներ, հագուստի կոդի գունային սխեման,
+                        հետհաշվարկի ժամանակաչափ, ամենօրյա ծրագիր, վայրի քարտեզներ և շատ ավելին։
+                    </p>
                 </div>
                 <div>
                     <img src="./img/vector.svg" alt="" />
-                    <h2>text</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur nihil consequuntur laudantium architecto quaerat fuga eius temporibus</p>
+                    <h2>Տարբեր կայքերի արգելափակումներ</h2>
+                    <p>
+                        Ստեղծեք ինտերակտիվ կայք տարբեր բլոկներով՝ պատկերի սլայդեր, հարցումներ, հագուստի կոդի գունային սխեման,
+                        հետհաշվարկի ժամանակաչափ, ամենօրյա ծրագիր, վայրի քարտեզներ և շատ ավելին։
+                    </p>
                 </div>
                 <div>
                     <img src="./img/vector.svg" alt="" />
-                    <h2>text</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur nihil consequuntur laudantium architecto quaerat fuga eius temporibus</p>
+                    <h2>Տարբեր կայքերի արգելափակումներ</h2>
+                    <p>
+                        Ստեղծեք ինտերակտիվ կայք տարբեր բլոկներով՝ պատկերի սլայդեր, հարցումներ, հագուստի կոդի գունային սխեման,
+                        հետհաշվարկի ժամանակաչափ, ամենօրյա ծրագիր, վայրի քարտեզներ և շատ ավելին։
+                    </p>
                 </div>
             </div>
         </section>

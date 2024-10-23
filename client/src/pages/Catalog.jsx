@@ -3,7 +3,7 @@ import { ItemCard } from '../components/item-card/ItemCard';
 
 export const Catalog = () => {
     return (
-        <div className='productList-cont'>
+        <section className='productList-cont' id='catalog'>
             <h1>ԸՆՏՐԵՔ<br /> <span>ՀՐԱՎԵՐ</span></h1>
             <div className='productList-items'>
                 <ul>
@@ -20,6 +20,6 @@ export const Catalog = () => {
                     <ItemCard />
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

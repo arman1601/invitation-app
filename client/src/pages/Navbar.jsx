@@ -41,25 +41,25 @@ export const Navbar = () => {
             <nav className='navbar'>
                 <ul className='navbar-list'>
                     <li
-                        className={`navbar-item ${activeSection === 'main' ? 'active' : ''}`}
+                        className={`desktop-only navbar-item ${activeSection === 'main' ? 'active' : ''}`}
                         onClick={() => handleSetActive('main')}
                     >
                         <Link smooth to="#main">Գլխավոր</Link>
                     </li>
                     <li
-                        className={`navbar-item ${activeSection === 'catalog' ? 'active' : ''}`}
-                        onClick={() => handleSetActive('catalog')}
-                    >
-                        <Link smooth to="#catalog">Ցանկ</Link>
-                    </li>
-                    <li
-                        className={`navbar-item ${activeSection === 'about' ? 'active' : ''}`}
+                        className={`desktop-only navbar-item ${activeSection === 'about' ? 'active' : ''}`}
                         onClick={() => handleSetActive('about')}
                     >
                         <Link smooth to="#about">Ավելին</Link>
                     </li>
                     <li
-                        className={`navbar-item ${activeSection === 'contacts' ? 'active' : ''}`}
+                        className={`desktop-only navbar-item ${activeSection === 'catalog' ? 'active' : ''}`}
+                        onClick={() => handleSetActive('catalog')}
+                    >
+                        <Link smooth to="#catalog">Ցանկ</Link>
+                    </li>
+                    <li
+                        className={`desktop-only navbar-item ${activeSection === 'contacts' ? 'active' : ''}`}
                         onClick={() => handleSetActive('contacts')}
                     >
                         <Link smooth to="#contacts">Կոնտակտ</Link>
@@ -69,6 +69,12 @@ export const Navbar = () => {
                         onClick={() => { handleSetActive('order'); return setIsOpen(true) } }
                     >
                         <Link smooth to="#order">Պատվիրել</Link>
+                    </li>
+                    <li 
+                        className='navbar-item-top  mobile-only'
+                        onClick={() => alert(1)}
+                    >
+                        top
                     </li>
                 </ul>
             </nav>

@@ -3,7 +3,7 @@ import { ItemButton } from '../item-button/ItemButton';
 
 export const CreateOrder = () => {
     return (
-        <div className='createOrder-cont'>
+        <section className='createOrder-cont' id='contacts'>
             <h2>
                 ՊԱՏՎԻՐԵԼ <br /> 
                 <span>ՀՐԱՎԵՐ</span>
@@ -28,6 +28,6 @@ export const CreateOrder = () => {
                     />
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

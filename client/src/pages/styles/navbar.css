@@ -12,7 +12,7 @@
     max-width: 100%;
     min-width: 300px;
     padding: 1.2rem 0.8rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .navbar-list {
@@ -33,9 +33,16 @@
     background: none;
     border: none;
     cursor: pointer;
-    transition: color 0.2s, background-color 0.2s;
+    padding: 1rem 0.5rem;
+
 }
 
+.navbar-item-top {
+    border-radius: 15px;
+    background-color: rgb(255, 254, 254);
+    border-color:  rgb(255, 254, 254);
+    padding: 1rem 0.5rem;
+}
 
 .top-button {
     display: none;
@@ -45,58 +52,12 @@
     display: none;
 }
 
-/* Стили для мобильных устройств */
-@media (max-width: 768px) {
-    .navbar {
-        width: 100%;
-        bottom: 0;
-        left: 0;
-        transform: none;
-        padding: 1rem;
-        background: none;  /* Убираем фон */
-        border: none;
-        backdrop-filter: none;
-    }
-
-    .navbar-list {
-        justify-content: center;
-    }
-
-    .navbar-item a {
-        padding: 0.7rem 1.5rem;
-    }
-
-    /* Прячем элементы, которые не нужны на мобильных устройствах */
-    .desktop-only {
-        display: none;
-    }
-
-    .mobile-only {
-        display: inline;
-        padding: 1rem 4rem 1rem 4rem;
-
-    }
-    .top-button,.navbar-item button,.navbar-item-order {
-        display: grid;
-        grid-template-columns:1fr 1fr;
-        background: rgba(255, 254, 254,0.5);
-        border: 1px solid rgba(255, 254, 254,0.5);
-        padding: 1rem 4rem 1rem 4rem;
-        border-radius: 30px;
-        font-size: 1.3rem;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        backdrop-filter: blur(10px);
-    }
-}
-
-
 .navbar-item.active a {
     border-radius: 15px;
     background-color: rgb(255, 254, 254);
     border-color:  rgb(255, 254, 254);
-    padding: 1rem 0.5rem;
+    /* padding: 1rem 0.5rem; */
+
 }
 
 .navbar-item-order a {
@@ -116,3 +77,64 @@
     border-color:  rgb(255, 254, 254);
     color: #3A3840;
 }
+
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
+    .navbar {
+        max-width: 90%; /* Ограничиваем ширину, чтобы она не была 100% */
+        bottom: 12px;
+        left: 50%; /* Центрируем по горизонтали */
+        transform: translateX(-50%); /* Центрируем с использованием translate */
+        padding: 1rem;
+        border: none;
+        backdrop-filter: none;
+        background: none;
+    }
+
+    .navbar-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-item a {
+        padding: 0.7rem 1.5rem;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: inline;
+        padding: 1rem 4rem;
+        background-color: #D8D8D8;
+        font-size: 1.3rem;
+    }
+
+    .top-button,
+    .navbar-item button,
+    .navbar-item-order {
+        display: grid;
+        background: rgba(255, 254, 254, 0.5);
+        border: 1px solid rgba(255, 254, 254, 0.5);
+        padding: 1rem 4rem;
+        border-radius: 30px;
+        font-size: 1.3rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);
+    }
+
+    .navbar-item-order {
+        padding: 0;
+        margin: 0;
+        backdrop-filter: none;
+        background: none;
+        border: none;
+        color: #D8D8D8;
+    }
+}
+
+

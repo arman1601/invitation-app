@@ -10,7 +10,7 @@ const AnimatedBackground = () => {
     const canvas = canvasRef.current;
     const context = canvas.getContext('2d');
     const overlay = overlayRef.current;
-    const particleCount = 30;
+    const particleCount = 40;
 
     class Particle {
       constructor() {
@@ -18,7 +18,7 @@ const AnimatedBackground = () => {
         this.y = Math.random() * overlay.clientHeight; // Начальное положение внутри overlay
         this.radius = Math.random() * 5 + 150;
         this.speedX = Math.random() * 0.15;
-        this.speedY = Math.random() * 0.1;
+        this.speedY = Math.random() * 0.15;
         this.color = this.getRandomColor();
       }
 

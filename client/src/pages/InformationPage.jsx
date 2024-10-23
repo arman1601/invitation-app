@@ -1,5 +1,5 @@
 import './styles/informationPage.css';
-
+import { HashLink as Link } from 'react-router-hash-link';
 export const InformationPage = () => {
     return (
         <section className='informationPage-cont'>
@@ -22,7 +22,9 @@ export const InformationPage = () => {
                     <span>վերբեռնել լուսանկարներ</span>
                 </li>
                 <li>
-                    <button type='submit'>Սկսի՛ր</button>
+                    <Link smooth to={'#catalog'}>
+                        <button type='submit'>Սկսի՛ր</button>
+                    </Link>
                 </li>
             </ul>
         </section>
