@@ -1,17 +1,21 @@
 import express from 'express';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
-import { errorHandlingMiddleware } from './middleware/ErrorHandlingMiddleware';
-
+// import { errorHandlingMiddleware } from './middleware/ErrorHandlingMiddleware';
+import feedbackRouter from './routes/feedbackRoutes.js';
+import multer from 'multer';
 const app = express();
+const upload = multer();
 
 app.use(cors({credentials: true , origin : process.env.CLIENT_URL}));
 app.use(express.static('./client/src'));
 app.use(express.json());
 app.use(cookieParser());
 
+app.use('/api', feedbackRouter);
+
 // amenaverjum kancheci u aranc next,vorovhetev es amenaverji tochkena voric heto ban chi linelu el
-app.listen(errorHandlingMiddleware);
+// app.listen(errorHandlingMiddleware);
 
 app.get('/test', (req, res) => {
   console.log('zaprosn ekav')
